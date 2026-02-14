@@ -1,0 +1,22 @@
+name: BonescraftRanks
+version: 1.0.1
+main: de.bonescraft.ranks.BonescraftRanksPlugin
+api-version: "1.21"
+author: Bonescraft
+
+commands:
+  bcrank:
+    description: Ränge verwalten
+    usage: /bcrank <set|get|list|reload> ...
+    permission: bonescraft.admin
+
+permissions:
+  bonescraft.admin:
+    description: Darf Ränge verwalten
+    default: op
+  bonescraft.build:
+    description: Darf bauen
+    default: false
+  bonescraft.feature.enderpearl:
+    description: Darf Enderperle nutzen
+    default: false

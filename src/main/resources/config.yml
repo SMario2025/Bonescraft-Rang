@@ -1,0 +1,30 @@
+enabled-worlds:
+  - world
+  - world_nether
+  - world_the_end
+
+messages:
+  no-build: "§cDu darfst hier nicht bauen."
+  no-feature: "§cDu hast keine Berechtigung für dieses Feature."
+  rank-set: "§aRang von §e{player} §aauf §b{rank} §agesetzt."
+  rank-get: "§e{player} §ahat Rang: §b{rank}"
+  rank-not-found: "§cRang nicht gefunden: §e{rank}"
+  player-not-found: "§cSpieler nicht gefunden."
+  reloaded: "§aBonescraftRanks neu geladen."
+
+features:
+  enderpearl: true
+
+ranks:
+  default:
+    inherits: []
+    perms: []
+  builder:
+    inherits: [default]
+    perms:
+      - bonescraft.build
+  mod:
+    inherits: [builder]
+    perms:
+      - bonescraft.feature.enderpearl
+      - bonescraft.admin
